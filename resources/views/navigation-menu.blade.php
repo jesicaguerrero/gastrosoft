@@ -11,14 +11,27 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-5 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        Menu {{-- {{ __('Dashboard') }} --}}
                     </x-nav-link>
+                    <x-nav-link :href="route('informacion')" :active="request()->routeIs('informacion')">
+                        Información
+                    </x-nav-link>
+                    <x-nav-link :href="route('pos')" :active="request()->routeIs('pos')">
+                        POS
+                    </x-nav-link>
+                    <x-nav-link :href="route('productos')" :active="request()->routeIs('productos')">
+                        Productos
+                    </x-nav-link>
+                    <x-nav-link :href="route('clientes')" :active="request()->routeIs('clientes')">
+                        Clientes
+                    </x-nav-link>
+                    <x-nav-link :href="route('cuentas')" :active="request()->routeIs('cuentas')">
+                        Cuentas
+                    </x-nav-link>
+
                 </div>
-                <x-nav-link :href="route('informacion')" :active="request()->routeIs('informacion')">
-                    Información
-                </x-nav-link>
 
             </div>
 
@@ -83,14 +96,12 @@
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">
                             @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-
                                 <button
                                     class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
                                     <img class="h-8 w-8 rounded-full object-cover"
                                         src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
                                 </button>
-                                {{ Auth::user()->profile_photo_url }}
-                                
+                                {{-- {{ Auth::user()->profile_photo_url }} --}}
                             @else
                                 <span class="inline-flex rounded-md">
                                     <button type="button"

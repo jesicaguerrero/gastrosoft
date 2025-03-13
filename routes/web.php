@@ -36,3 +36,47 @@ Route::middleware([
         return view('informacion');
     })->name('informacion');
 });
+
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/pos', function () {
+        return view('pos');
+    })->name('pos');
+});
+
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/productos', function () {
+        return view('productos');
+    })->name('productos');
+});
+
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/clientes', function () {
+        return view('clientes');
+    })->name('clientes');
+});
+
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/cuentas', function () {
+        return view('cuentas');
+    })->name('cuentas');
+});
