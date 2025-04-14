@@ -32,20 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-6 text-center">
-                    <h4 class="text-md font-bold text-gray-800">Síguenos en redes sociales</h4>
-                    <div class="flex justify-center space-x-4 mt-2">
-                        <a href="#" class="text-blue-600 hover:text-blue-800">
-                            <img src="https://image.flaticon.com/icons/png/512/124/124010.png" alt="Facebook" class="w-6 h-6 inline-block">
-                        </a>
-                        <a href="#" class="text-blue-400 hover:text-blue-600">
-                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="Twitter" class="w-6 h-6 inline-block">
-                        </a>
-                        <a href="#" class="text-pink-600 hover:text-pink-800">
-                            <img src="https://image.flaticon.com/icons/png/512/2111/2111463.png" alt="Instagram" class="w-6 h-6 inline-block">
-                        </a>
-                    </div>
-                </div>
+               
                 <div class="mt-6 text-center">
                     <h4 class="text-md font-bold text-gray-800">Ubicación</h4>
                     <div class="flex justify-center">
