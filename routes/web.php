@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ClienteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -80,3 +80,5 @@ Route::middleware([
         return view('cuentas');
     })->name('cuentas');
 });
+
+Route::resource('clientes', ClienteController::class);

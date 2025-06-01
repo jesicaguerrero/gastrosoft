@@ -24,7 +24,7 @@
                     <x-nav-link :href="route('productos')" :active="request()->routeIs('productos')">
                         Productos
                     </x-nav-link>
-                    <x-nav-link :href="route('clientes')" :active="request()->routeIs('clientes')">
+                    <x-nav-link :href="route('clientes.index')" :active="request()->routeIs('clientes.*')">
                         Clientes
                     </x-nav-link>
                     <x-nav-link :href="route('cuentas')" :active="request()->routeIs('cuentas')">
